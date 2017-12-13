@@ -1,0 +1,25 @@
+#cardLook{
+	background-color: #484848;
+	border-radius: 5px;
+	margin: 5px;
+}
+#header{
+	padding-left: 20px;
+	margin-left: 5px;
+	margin-top: 5px;
+}
+hr{
+	display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0; 
+    color: white;
+}
+.readMoreLink{
+	color:  #ccc;
+}
+#showLess{
+	color:  #ccc;
+}

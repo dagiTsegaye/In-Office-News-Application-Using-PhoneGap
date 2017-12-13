@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
+    <!--<meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />!-->
+    <!--<meta http-equiv="Content-Security-Policy" default-src='self' script-src='self' connect-src='self' img-src='self' style-src='self'>!-->
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
+    <!--<meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval'">!-->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+    <title>STIC Mobile</title>
+
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <!--<script type="text/javascript" src="js/bootstrap.min.js"></script>!-->
+    <script type="text/javascript" src="js/news.js"></script>
+    <!--<script type="text/javascript">
+    /* $(document).ready(function()
+     {
+         var url="http://localhost/testmysql.php";
+         $.getJSON(url,function(result){
+         console.log(result);
+             $.each(result, function(i, field){
+             var id=field.id;
+             var title=field.title;
+             var duration=field.description;
+             $("#well").append(id+title+duration);
+             });
+         });
+     });*/
+ </script>!-->
+</head>
+
+<body>    
+    <div id="header">
+        <h1>STIC</h1>
+    </div>
+
+    <div class="container text-center">
+        <img src="img/set_logo.png"/>
+        <h2>Welcome to STIC</h2>       
+        <p class="lead">STIC News</p>
+        <div class="row">
+            <div id="cardLook">
+                <div class="col-md-4">
+                    <div class="well">
+                        <!--<div class="busy">Loading...</div>!--> 
+                        <!--<i class="fa fa-window-restore" style="font-size:30px"></i>!-->
+                        <div id="content">
+                            <h3>News</h3>
+                            <!--<p id="image"></p></br></br>!-->
+                            <p id="newsTitle"></p>
+                            
+                        </div>
+                        <!--<img src="pics/"> !-->
+                    </div>    
+                </div>
+            </div>         
+        </div>
+    </div>
+
+    <div id="footer">
+        SCIT, 2017
+    </div>
+
+    <!--<script type="text/javascript" src="cordova.js">
+        document.addEventListener("deviceready", onDeviceReady, false);
+        function readDB(tx){
+            tx.executeSql('use database scit;');
+            tx.executeSql('select * from news;');
+        }
+        function transaction_error(tx, error) {
+            $('#busy').hide();
+            alert("Database Error: " + error);
+        }
+
+        function populateDB_success() {
+            dbCreated = true;
+            db.transaction(getEmployees, transaction_error, populateDB_success);
+        }
+        function onDeviceReady() {
+            var db = window.openDatabase("MySql");
+            db.transaction(readDB);
+        }
+    </script>!-->
+
+    <!--<script type="text/javascript" src="js/index.js"></script>!-->
+    
+    
+</body>
+
+</html>
